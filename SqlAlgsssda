@@ -1,0 +1,18 @@
+Sql
+03, 
+
+05,
+
+06,
+USE AdventureWorks2008R2
+GO
+SELECT 
+  BusinessEntityID
+  ,PersonType
+ ,FirstName + ' ' + MiddleName + ' ' + LastName 
+FROM Person.Person
+ ORDER BY BusinessEntityID ASC
+  OFFSET 100 ROWS 
+  FETCH NEXT 5 ROWS ONLY
+GO
+07
