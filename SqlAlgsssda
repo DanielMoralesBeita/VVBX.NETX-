@@ -1,5 +1,13 @@
 Sql
 03, 
+Data Manipulation
+Language (DML*)
+
+Data Definition
+Language (DDL)
+
+Data Control
+Language (DCL)
 
 05,
 
@@ -15,4 +23,9 @@ FROM Person.Person
   OFFSET 100 ROWS 
   FETCH NEXT 5 ROWS ONLY
 GO
+LA MENOR PARA OPTIMIZACION ES LA PRIMERA
+El from se ejecuta primero
+Rollup
+Teoria de conjuntos
+partitiomn by
 07
