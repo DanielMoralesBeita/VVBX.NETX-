@@ -29,3 +29,11 @@ Rollup
 Teoria de conjuntos
 partitiomn by
 07
+13
+SELECT Category, Qty, Orderyear,
+SUM(Qty) OVER (
+PARTITION BY category
+ORDER BY orderyear
+ROWS BETWEEN UNBOUNDED PRECEDING
+AND CURRENT ROW) AS RunningQty
+FROM Sales.CategoryQtyYear
